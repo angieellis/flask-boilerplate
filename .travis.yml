@@ -22,6 +22,7 @@ before_script:
   - docker-compose up --build -d
 
 script:
+  - pip install tox
   - tox
 
 after_script:
