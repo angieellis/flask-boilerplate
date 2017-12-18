@@ -21,6 +21,7 @@ services:
     command: python src/server.py
 
   db:
-    image: postgres:9.4
+    image: postgres
+    env_file: ./.env
     volumes:
       - /var/lib/postgresql/data

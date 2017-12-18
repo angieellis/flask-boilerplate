@@ -7,7 +7,7 @@ PORT = int(os.getenv('PORT', '5000'))
 
 POSTGRES = {
     'user': os.getenv('POSTGRES_USER', 'postgres'),
-    'pw': os.getenv('POSTGRES_PW', ''),
+    'pw': os.getenv('POSTGRES_PASSWORD', ''),
     'host': os.getenv('POSTGRES_HOST', os.getenv('DB_PORT_5432_TCP_ADDR')),
     'port': os.getenv('POSTGRES_PORT', os.getenv('DB_PORT_5432_TCP_PORT')),
     'db': os.getenv('POSTGRES_DB', 'postgres'),
