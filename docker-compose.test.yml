@@ -6,4 +6,4 @@ services:
     environment:
       ENVIRONMENT: test
       FLASK_DEBUG: 1
-  command: pip install --user tox && /vendor/bin/tox
+    command: pip install --user tox && /vendor/bin/tox
