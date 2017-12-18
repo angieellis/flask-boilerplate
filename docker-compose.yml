@@ -1,5 +1,5 @@
 server:
-  image: python:3
+  image: python:3.6
   working_dir: /mnt
   volumes:
     - .:/mnt

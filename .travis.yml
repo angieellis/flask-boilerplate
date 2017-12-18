@@ -1,0 +1,9 @@
+language: python
+python: '3.6'
+install:
+  - pip install --user tox
+  - pip install --user coveralls
+script:
+  - tox -e $TOX_ENV
+after_success:
+  - coveralls

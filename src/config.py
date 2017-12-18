@@ -1,4 +1,5 @@
-import os, logging
+import logging
+import os
 
 DEBUG = True
 HOST = os.getenv('HOST')
@@ -11,7 +12,7 @@ POSTGRES = {
     'port': os.getenv('POSTGRES_PORT', os.getenv('DB_PORT_5432_TCP_PORT')),
     'db': os.getenv('POSTGRES_DB', 'postgres'),
 }
-DB_URI = 'postgresql://%(user)s:%(pw)s@%(host)s:%(port)s/%(db)s' % POSTGRES
+DB_URI = 'postgresql://{user}:{pw}@{host}:{port}/{db}'.format(**POSTGRES)
 
 logging.basicConfig(
     filename=os.getenv('SERVICE_LOG', 'server.log'),
