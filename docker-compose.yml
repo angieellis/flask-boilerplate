@@ -9,6 +9,8 @@ services:
       - .:/mnt
     links:
      - db
+    depends_on:
+      - db
     ports:
       - '5000:5000'
     environment:
