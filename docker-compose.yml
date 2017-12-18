@@ -13,6 +13,7 @@ services:
       - db
     ports:
       - '5000:5000'
+    env_file: ./.env
     environment:
       PYTHONPATH: $PYTHONPATH:src
       PYTHONUSERBASE: /mnt/vendor
