@@ -19,10 +19,9 @@ install:
   - docker-compose version
 
 before_script:
-  - docker-compose up --build -d
 
 script:
-  - pip install --user tox && tox
+  - docker-compose run server
 
 after_script:
   - docker-compose down

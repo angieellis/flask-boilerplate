@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+
+  server:
+    environment:
+      ENVIRONMENT: test
+      FLASK_DEBUG: 1
+  command: pip install --user tox && /vendor/bin/tox
