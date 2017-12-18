@@ -6,4 +6,4 @@ services:
     environment:
       ENVIRONMENT: test
       FLASK_DEBUG: 1
-    command: bash -c "pip install --user tox && tox"
+    command: bash -c "pip install tox && tox"
